@@ -136,6 +136,11 @@ main #about {
     text-align: center;
 }
 
+main #about #aboutContent video {
+    margin: 0 1rem .5rem 0;
+    width: 50%;
+}
+
 main #about #aboutContent p {
     margin: .5rem 0;
 }
@@ -274,6 +279,10 @@ main #comment #commentContainer .comment-box .comment-body .comment-content p:la
 }
 
 @media (max-width: 767px) {
+    main #about #aboutContent video {
+        width: 100%;
+    }
+
     main #event #eventContainer .event-box {
         width: 100%;
     }
