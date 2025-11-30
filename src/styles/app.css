@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    font-family: var(--font-serif);
+}
+
+:root {
+    --color-primary: #971a1a;
+    --color-secondary: #CE0002;
+    --color-accent: #B48C2A;
+
+    --font-gothic: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    --font-serif: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+
+body {
+    --box-size: 50px;
+    margin: 0;
+    width: 100dvw;
+    width: 100vw;
+    overflow-x: hidden;
+    min-height: 100dvh;
+    min-height: 100vh;
+    background-color: #fcfcfc;
+    color: #0f0f0f;
+}
+
+.text-accent {
+    background: linear-gradient(transparent 70%, #b48c2abf 70%);
+}
+
+main section {
+    padding: 1rem;
+}
+
+main section:nth-child(odd) {
+    background:
+        linear-gradient(45deg, var(--color-primary) 25%, transparent 25%, transparent 75%, var(--color-primary) 75%),
+        linear-gradient(45deg, var(--color-primary) 25%, transparent 25%, transparent 75%, var(--color-primary) 75%);
+    background-color: var(--color-secondary);
+    background-size: calc(var(--box-size) * 2) calc(var(--box-size) * 2);
+    background-position: 0 0, var(--box-size) var(--box-size);
+    color: #fcfcfc;
+}
+
+footer {
+    padding: 2rem;
+    text-align: center;
+}
+
+footer #catchphrase {
+    display: block;
+    color: #0f0f0f;
+    text-align: center;
+    font-style: italic;
+}
+
+footer small {
+    font-size: 1rem;
+    color: #444444;
+}
+footer small a {
+    font-size: 1rem;
+    color: #444444;
+    text-decoration-color: transparent;
+    text-underline-offset: 0.375em;
+    transition: .5s text-decoration-color ease-in-out;
+}
+footer small a:hover {
+    text-decoration-color: var(--color-accent);
+}
