@@ -239,7 +239,7 @@ main #comment #commentContainer {
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    gap: 1rem;
+    gap: 3rem;
 }
 main #comment #commentContainer .comment-box {
     display: flex;
