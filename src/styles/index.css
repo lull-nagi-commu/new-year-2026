@@ -49,12 +49,6 @@ main #keyVisual {
     position: relative;
 }
 
-main #keyVisual #keyVisualLogoBox {
-    padding: .25rem 1rem;
-    background-color: #fcfcfc;
-    border-radius: .25rem;
-}
-
 main #keyVisual #keyVisualContent {
     display: flex;
     flex-direction: column;
