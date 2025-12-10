@@ -1,0 +1,20 @@
+{
+  "name": "new-year-2026",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build:css": "sass src/styles/scss:src/styles --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lull-nagi-commu/new-year-2026.git"
+  },
+  "author": "https://github.com/osaru07m/",
+  "bugs": {
+    "url": "https://github.com/lull-nagi-commu/new-year-2026/issues"
+  },
+  "homepage": "https://github.com/lull-nagi-commu/new-year-2026#readme",
+  "devDependencies": {
+    "sass": "^1.77.0"
+  }
+}

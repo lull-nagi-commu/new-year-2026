@@ -1,0 +1,76 @@
+@use 'common';
+@use 'variables';
+
+main {
+    text-align: center;
+
+    #about {
+        #aboutContent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+
+    #pattern {
+        #patternContent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+
+    #howTo {
+        #howToContent {
+            overflow-x: scroll;
+            display: flex;
+            justify-content: start;
+            align-items: stretch;
+            gap: .5rem;
+
+            .step {
+                background-color: variables.$color-white;
+                border-radius: .25rem;
+                width: calc((100% - 1.5rem) / 4);
+                color: variables.$color-primary;
+                flex: 0 0 auto;
+                padding: .5rem;
+
+                @media (max-width: 767px) {
+                    width: 75%;
+                }
+
+                .step-no {
+                    display: block;
+                    width: 2rem;
+                    font-size: 1.5rem;
+                    text-align: center;
+                    align-content: center;
+                    aspect-ratio: 1/1;
+                    border-radius: 100%;
+                    background-color: variables.$color-primary;
+                    color: variables.$color-white;
+                }
+
+                .step-body {
+                    padding: .25rem;
+                    text-align: start;
+                }
+            }
+        }
+    }
+
+    #acceptForm {
+        #acceptFormContent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+}

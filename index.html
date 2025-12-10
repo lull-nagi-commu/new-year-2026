@@ -3,132 +3,185 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- SEO -->
         <title>凪コミュ！ 新年特設サイト</title>
         <meta name="description" content="勉強会と交流を楽しむコミュニティ「凪コミュ！」の新年特設サイト。">
         <meta name="robots" content="noindex, nofollow">
-
+        <!-- Styles -->
         <link rel="stylesheet" href="./src/styles/app.css">
-        <link rel="stylesheet" href="./src/styles/index.css">
-
+        <link rel="stylesheet" href="./src/styles/top.css">
+        <!-- Icons -->
         <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
         <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
         <link rel="apple-touch-icon" sizes="180x180" href="./src/images/icon.svg">
         <link rel="icon" type="image/svg" sizes="36x36" href="./src/images/icon.svg">
-
-        <meta property="og:title" content="凪コミュ！ 新年特設サイト">
+        <!-- OGP -->
+        <meta property="og:title" content="トップ">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://lull-nagi-commu.github.io/new-year-2026/">
         <meta property="og:image" content="https://lull-nagi-commu.github.io/new-year-2026/src/images/ogp.png">
         <meta property="og:site_name" content="凪コミュ！ 新年特設サイト">
         <meta property="og:description" content="勉強会と交流を楽しむコミュニティ「凪コミュ！」の新年特設サイト。">
         <meta property="og:locale" content="ja">
-
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="凪コミュ！ 新年特設サイト">
         <meta name="twitter:description" content="勉強会と交流を楽しむコミュニティ「凪コミュ！」の新年特設サイト。">
         <meta name="twitter:image" content="https://lull-nagi-commu.github.io/new-year-2026/src/images/ogp.png">
-
+        <!-- GTag (Google Analytics) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-YDFJMFTMLP"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-
-            gtag('config', 'G-YDFJMFTMLP');
-        </script>
+        <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-YDFJMFTMLP');</script>
     </head>
-    <body class="loading-lock">
-        <div id="loading">
-            <img src="./src/images/icon.svg" alt="凪コミュ！ アイコン" id="icon">
 
-            <span id="yearCount">2019</span>
+    <body class="scroll-lock">
+        <h1>凪コミュ！ 新年特設サイト</h1>
+
+        <div id="loadingContainer">
+            <img src="./src/images/icon.svg" alt="凪コミュ！" id="loadingIcon">
+
+            <span id="loadingText">2019</span>
         </div>
 
-        <div id="mainContainer">
+        <div id="container">
+            <header>
+                <a href="./" id="brandLogo">
+                    <img src="./src/images/logo.png" alt="凪コミュ！">
+                </a>
+
+                <button id="headerNavbarToggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav id="headerNavbar">
+                    <img src="./src/images/logo.png" alt="凪コミュ！" class="nav-logo">
+
+                    <div class="nav-group">
+                        <a href="./" class="active">トップ</a>
+                        <a href="./special/">新年特別企画</a>
+                    </div>
+
+                    <div class="nav-group">
+                        <a href="https://sites.google.com/view/lull-nagi-commu/">公式サイト</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUTkAp2Sgr0iJ9th_bZ1jrlbhJs2OUwsbPhoZRTyyK3suQdA/viewform">主催者応募</a>
+                    </div>
+
+                    <img src="./src/images/members.png" alt="運営メンバー" id="headerNavbarMembers">
+                </nav>
+            </header>
+
             <main>
+                <h2 class="visually-hidden">トップ</h2>
+
                 <section id="keyVisual">
                     <div id="keyVisualContent" style="display: none;">
-                        <img src="./src/images/logo.png" alt="凪コミュ！">
+                        <img src="./src/images/logo.png" alt="凪コミュ！" id="keyVisualContentLogo">
 
-                        <h2><span>あけまして</span><span>おめでとうございます</span></h2>
+                        <h3><span>あけまして</span><span>おめでとうございます</span></h3>
 
                         <p>2025年は多くの方にご参加いただき、ありがとうございました。<br>2026年ではエンジニアの方を主催に招き入れ、新たな企画開催や更なる成長をしていきます。</p>
                     </div>
-                    <img src="./src/images/japanese_style_cloud.svg" alt="和風雲" id="keyVisualCloud1" class="cloud">
-                    <img src="./src/images/japanese_style_cloud.svg" alt="和風雲" id="keyVisualCloud2" class="cloud">
+
+                    <img src="./src/images/japanese_style_cloud.svg" alt="和風雲" class="cloud">
+
+                    <img src="./src/images/japanese_style_cloud.svg" alt="和風雲" class="cloud">
                 </section>
 
                 <section id="about">
                     <div class="heading">
-                        <h2>凪コミュ！とは？</h2>
+                        <h3>凪コミュ！とは？</h3>
                     </div>
 
                     <div id="aboutContent">
-                        <video src="./src/movies/pr.mp4" controls muted autoplay></video>
+                        <video src="./src/movies/promotion.mp4" controls muted></video>
 
-                        <p>勉強会 × 交流会 のハイブリッドイベント。</p>
+                        <div>
+                            <p>勉強会 × 交流会 のハイブリッドイベント。</p>
 
-                        <p>アウトプットや質問、勉強だけでなく、雑談やゲームなどでも楽しく交流しましょう🎵<br>どちらかというと夜の時間帯に開催が多いので、普段お仕事などで勉強会に参加できない方も大歓迎です！</p>
+                            <p>アウトプットや質問、勉強だけでなく、雑談やゲームなどでも楽しく交流しましょう🎵<br>どちらかというと夜の時間帯に開催が多いので、普段お仕事などで勉強会に参加できない方も大歓迎です！</p>
 
-                        <p>毎回、異なるエンジニアが主催者となって開催します。<br>時にはスペシャルゲストも登場するかも…！？</p>
+                            <p>毎回、異なるエンジニアが主催者となって開催します。<br>時にはスペシャルゲストも登場するかも…！？</p>
 
-                        <p>そして参加者には <span class="text-accent">経験値200pt</span> をプレゼント！✨<br>さらに！！主催者には <span class="text-accent">経験値200pt</span> + <span class="text-accent">スタンプ5個</span> のダブルプレゼント！🎉</p>
+                            <p>そして参加者には <span class="text-accent">経験値200pt</span> をプレゼント！✨<br>さらに！！主催者には <span class="text-accent">経験値200pt</span> + <span class="text-accent">スタンプ5個</span> のダブルプレゼント！🎉</p>
+                        </div>
+
+                        <div>
+                            <div class="btn-group">
+                                <a href="https://sites.google.com/view/lull-nagi-commu/" target="_blank" class="btn">公式サイト</a>
+
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUTkAp2Sgr0iJ9th_bZ1jrlbhJs2OUwsbPhoZRTyyK3suQdA/viewform" target="_blank" class="btn">主催者応募受付フォーム</a>
+                            </div>
+
+                            <span class="text-muted">※上記の各種リンクは外部サイトを開きます。</span>
+                        </div>
                     </div>
-
-                    <div id="links">
-                        <a href="https://sites.google.com/view/lull-nagi-commu/" target="_blank">公式サイト</a>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUTkAp2Sgr0iJ9th_bZ1jrlbhJs2OUwsbPhoZRTyyK3suQdA/viewform" target="_blank">主催者応募受付フォーム</a>
-                    </div>
-
-                    <span id="externalLinkMessage">※上記の各種リンクは外部サイトを開きます。</span>
-
                 </section>
 
-                <section id="event">
+                <section id="events">
                     <div class="heading">
-                        <h2>凪コミュ！のイベント</h2>
+                        <h3>イベント</h3>
                     </div>
 
-                    <div id="eventContainer">
-                        <div class="event-box">
-                            <img src="./src/images/introduce/kanta_akutsu.png" alt="阿久津 寛太さんの自己紹介画像">
+                    <div id="eventsContent">
+                        <div class="event">
+                            <img src="./src/images/introduce/kanta_akutsu.png" alt="阿久津 寛太" class="introduce">
 
                             <div class="event-body">
-                                <h3>第1回 (主催:阿久津 寛太)</h3>
+                                <div class="description">
+                                    <h3>第1回 - 阿久津 寛太</h3>
+                                    <p>2025年9月13日(土) 開催</p>
+                                </div>
 
-                                <p>2025年9月13日(土) 開催</p>
+                                <div class="avatar-box">
+                                    <img src="./src/images/vo-avatar/normal/kanta_akutsu.png" alt="阿久津 寛太" class="avatar">
+                                </div>
                             </div>
                         </div>
 
-                        <div class="event-box">
-                            <img src="./src/images/introduce/toshiki_asaoka.png" alt="浅岡 利紀さんの自己紹介画像">
+                        <div class="event">
+                            <img src="./src/images/introduce/toshiki_asaoka.png" alt="浅岡 利紀" class="introduce">
 
                             <div class="event-body">
-                                <h3>第2回 (主催:浅岡 利紀)</h3>
+                                <div class="description">
+                                    <h3>第2回 - 浅岡 利紀</h3>
+                                    <p>2025年10月9日(木) 開催</p>
+                                </div>
 
-                                <p>2025年10月9日(木) 開催</p>
+                                <div class="avatar-box">
+                                    <img src="./src/images/vo-avatar/normal/toshiki_asaoka.png" alt="浅岡 利紀" class="avatar">
+                                </div>
                             </div>
                         </div>
 
-                        <div class="event-box">
-                            <img src="./src/images/introduce/musashi_izumi.png" alt="泉 武蔵さんの自己紹介画像">
+                        <div class="event">
+                            <img src="./src/images/introduce/musashi_izumi.png" alt="泉 武蔵" class="introduce">
 
                             <div class="event-body">
-                                <h3>第3回 (主催:泉 武蔵)</h3>
+                                <div class="description">
+                                    <h3>第3回 - 泉 武蔵</h3>
+                                    <p>2025年11月28日(金) 開催</p>
+                                </div>
 
-                                <p>2025年11月28日(金) 開催</p>
+                                <div class="avatar-box">
+                                    <img src="./src/images/vo-avatar/normal/musashi_izumi.png" alt="泉 武蔵" class="avatar">
+                                </div>
                             </div>
                         </div>
 
-                        <div class="event-box next">
-                            <span class="next-badge">Next</span>
+                        <div class="event next">
+                            <span class="badge">Next</span>
 
-                            <img src="https://placehold.jp/444444/ffffff/1920x1080.png?text=Coming%20Soon..." alt="森岡 直紀さんの自己紹介画像">
+                            <img src="https://placehold.jp/444444/ffffff/1920x1080.png?text=Coming%20Soon..." alt="森岡 直紀" class="introduce">
 
                             <div class="event-body">
-                                <h3>第4回 (主催:森岡 直紀さん)</h3>
+                                <div class="description">
+                                    <h3>第4回 - 森岡 直紀</h3>
+                                    <p>2026年1月16日(金) 開催</p>
+                                </div>
 
-                                <p>近日情報解禁...!!</p>
+                                <div class="avatar-box">
+                                    <img src="./src/images/vo-avatar/normal/naoki_morioka.png" alt="森岡 直紀" class="avatar">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -136,54 +189,66 @@
 
                 <section id="special">
                     <div class="heading">
-                        <h2>第4回は新年特別企画を...!?</h2>
+                        <h3>第4回は一味違う！？</h3>
                     </div>
 
-                    <div id="specialContainer">
-                        <p>「新年初開催」「運営メンバー以外による主催初」を記念して、新年特別企画「福笑い」を実施します。</p>
-                        <p>今回の企画では、事前参加型のコンテンツとして、参加予定者の皆さんにも事前に作品づくりに挑戦していただき、当日その作品を紹介する予定です。</p>
-                        <p>新しい一年のスタートを、みんなで笑顔いっぱいに迎えられるよう、凪コミュ！らしい温かく楽しい時間をお届けします。</p>
-                        <p>企画の詳細や参加方法については、下記のページより随時お知らせしてまいります。<br>どうぞお楽しみに！</p>
-                        <a href="./special/">特別企画について</a>
+                    <div id="specialContent">
+                        <div>
+                            <p>新年初開催を記念して、新年特別企画「福笑い」を実施します。</p>
+
+                            <p>今回の企画では、事前参加型のコンテンツとして、参加予定者の皆さんにも事前に作品づくりに挑戦していただき、当日その作品を紹介する予定です。</p>
+
+                            <p>新しい一年のスタートを、みんなで笑顔いっぱいに迎えられるよう、凪コミュ！らしい温かく楽しい時間をお届けします。</p>
+
+                            <p>企画の詳細や参加方法については、下記のページより随時お知らせしてまいります。</p>
+
+                            <p>どうぞお楽しみに！</p>
+                        </div>
+
+                        <div class="btn-group">
+                            <a href="./special" class="btn">特別企画「福笑い」について</a>
+                        </div>
                     </div>
                 </section>
 
-                <section id="comment">
+                <section id="directorMessage">
                     <div class="heading">
-                        <h2>運営監督チームからの言葉</h2>
+                        <h3>運営監督チームからの言葉</h3>
                     </div>
 
-                    <div id="commentContainer">
-                        <div class="comment-box">
-                            <img src="./src/images/vo-avatar/kanta_akutsu.png" alt="阿久津 寛太">
+                    <div id="directorMessageContent">
+                        <p>運営監督チームは、開催ごとの進捗管理・主催者の方や運営のサポートはもちろん、新プロジェクト考案など様々なことを行っております。</p>
 
-                            <div class="comment-body">
-                                <div class="comment-author">
-                                    <h3>阿久津 寛太</h3>
+                        <div class="message">
+                            <img src="./src/images/vo-avatar/new-year/kanta_akutsu.png" alt="阿久津 寛太">
+
+                            <div class="message-body">
+                                <div class="message-author">
+                                    <h4>阿久津 寛太</h4>
 
                                     <span>(運営代表)</span>
                                 </div>
 
-                                <div class="comment-content">
+                                <div class="message-content">
                                     <p>みなさま、あけましておめでとうございます。</p>
                                     <p>昨年は、多くの方にご参加いただき、イベントを通じて新たな発見や交流が生まれる一年となりました。<br>心より御礼申し上げます。</p>
-                                    <p>本年は、新たな企画の開催に加え、運営メンバー以外の方による主催イベントなど、さらに活動の幅を広げてまいります。</p>
+                                    <p>本年は、より良いイベント作りに加え、新たな企画やプロジェクトの開催など、さらに活動の幅を広げてまいります。</p>
                                     <p>本年も変わらぬご支援・ご参加のほど、どうぞよろしくお願いいたします。<br>凪コミュ！を引き続きお楽しみください。</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="comment-box">
-                            <img src="./src/images/vo-avatar/toshiki_asaoka.png" alt="浅岡 利紀">
+                        <div class="message">
+                            <img src="./src/images/vo-avatar/new-year/toshiki_asaoka.png" alt="浅岡 利紀">
 
-                            <div class="comment-body">
-                                <div class="comment-author">
-                                    <h3>浅岡 利紀</h3>
+                            <div class="message-body">
+                                <div class="message-author">
+                                    <h4>浅岡 利紀</h4>
 
                                     <span>(運営副代表)</span>
                                 </div>
 
-                                <div class="comment-content">
+                                <div class="message-content">
                                     <p>ハッピーニューイヤー！新たな1年が始まりました！</p>
                                     <p>昨年は凪コミュ！を通じて様々な方と関わる事ができました。<br>皆様ありがとうございます。</p>
                                     <p>本年も凪コミュ！を大いに盛り上げたいと思いますので、多くの方に出逢えることを楽しみにしております！</p>
@@ -191,6 +256,20 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </section>
+
+                <section id="message">
+                    <div class="heading">
+                        <h3>運営からの言葉</h3>
+                    </div>
+
+                    <div id="messageContent">
+                        <img src="./src/images/members.png" alt="運営メンバー">
+
+                        <p>昨年も多くの方にご参加頂き、誠に感謝申し上げます。</p>
+
+                        <p>本年も更なる成長を胸に活動の幅を広げてまいりますので、<br>ご支援・ご参加のほど、よろしくお願い申し上げます。</p>
                     </div>
                 </section>
             </main>
@@ -202,37 +281,92 @@
         </div>
 
         <div id="javascript">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+            <script src="./libs/jquery.min.js"></script>
+            <script src="./libs/gsap/gsap.min.js"></script>
+            <script src="./libs/gsap/ScrollTrigger.min.js"></script>
+            <script src="./src/js/loadingManager.js"></script>
+            <script src="./src/js/navbarToggler.js"></script>
             <script>
-                $(document).ready(function () {
-                    const counterObj = { value: 2019 };
-                    const yearCount = $('#yearCount');
+                // loading
+                const loadingManager = new LoadingManager(
+                    $('#loadingContainer'),
+                    $('#loadingText'),
+                    $('#keyVisualContent')
+                );
 
-                    gsap.to(counterObj, {
-                        value: 2026,
-                        duration: 3,
-                        ease: "ease.inOut",
-                        onUpdate: () => {
-                            yearCount.text(Math.floor(counterObj.value));
+                loadingManager.animate();
 
-                            if (counterObj.value === 2026) {
-                                setTimeout(() => {
-                                    $('#loading').fadeOut();
-                                }, 1500);
-
-                                setTimeout(() => {
-                                    $('#keyVisualContent').fadeIn();
-                                }, 2500);
-
-                                $('body').removeClass('loading-lock')
-                            }
+                // scroll triggers
+                gsap.fromTo(
+                    '#about #aboutContent video, #about #aboutContent div',
+                    {
+                        opacity: 0,
+                        x: -10
+                    },
+                    {
+                        opacity: 1,
+                        x: 0,
+                        stagger: { each: 0.2 },
+                        scrollTrigger: {
+                            trigger: '#about',
+                            start: 'top center'
                         }
-                    });
+                    }
+                );
 
-                    gsap.fromTo(
-                        '#aboutContent p, #about #links, #about #externalLinkMessage',
+                gsap.fromTo(
+                    '#events #eventsContent .event',
+                    {
+                        opacity: 0,
+                        x: -10
+                    },
+                    {
+                        opacity: 1,
+                        x: 0,
+                        stagger: { each: 0.2 },
+                        scrollTrigger: {
+                            trigger: '#events',
+                            start: 'top center'
+                        }
+                    }
+                );
+
+                gsap.fromTo(
+                    '#special #specialContent p',
+                    {
+                        opacity: 0,
+                        x: -10
+                    },
+                    {
+                        opacity: 1,
+                        x: 0,
+                        stagger: { each: 0.2 },
+                        scrollTrigger: {
+                            trigger: '#special',
+                            start: 'top center'
+                        }
+                    }
+                );
+
+                gsap.fromTo(
+                    '#directorMessage #directorMessageContent > p, #directorMessage #directorMessageContent .message',
+                    {
+                        opacity: 0,
+                        x: -10
+                    },
+                    {
+                        opacity: 1,
+                        x: 0,
+                        stagger: { each: 0.2 },
+                        scrollTrigger: {
+                            trigger: '#directorMessage',
+                            start: 'top center'
+                        }
+                    }
+                );
+
+                gsap.fromTo(
+                        '#message #messageContent *',
                         {
                             opacity: 0,
                             x: -10
@@ -240,54 +374,13 @@
                         {
                             opacity: 1,
                             x: 0,
-                            stagger: {
-                                each: 0.2
-                            },
+                            stagger: { each: 0.2 },
                             scrollTrigger: {
-                                trigger: '#aboutContent',
+                                trigger: '#message',
                                 start: 'top center'
                             }
                         }
                     );
-
-                    gsap.fromTo(
-                        '.event-box',
-                        {
-                            opacity: 0,
-                            x: -10
-                        },
-                        {
-                            opacity: 1,
-                            x: 0,
-                            stagger: {
-                                each: 0.2
-                            },
-                            scrollTrigger: {
-                                trigger: '#eventContainer',
-                                start: 'top center'
-                            }
-                        }
-                    );
-
-                    gsap.fromTo(
-                        '.comment-box',
-                        {
-                            opacity: 0,
-                            x: -10
-                        },
-                        {
-                            opacity: 1,
-                            x: 0,
-                            stagger: {
-                                each: 0.2
-                            },
-                            scrollTrigger: {
-                                trigger: '.comment-box',
-                                start: 'top center'
-                            }
-                        }
-                    );
-                });
             </script>
         </div>
     </body>

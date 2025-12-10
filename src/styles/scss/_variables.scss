@@ -1,0 +1,16 @@
+// Color
+$color-primary: #971a1a;
+$color-secondary: #CE0002;
+$color-accent: #B48C2A;
+
+$color-white: #fcfcfc;
+$color-black: #23221f;
+$color-gray: #444444;
+
+// Font
+$font-gothic: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+$font-serif: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+
+// Height
+$main-height-dvh: calc(100dvh - ((.5rem * 2) + 2.5rem));
+$main-height-vh: calc(100vh - ((.5rem * 2) + 2.5rem));
