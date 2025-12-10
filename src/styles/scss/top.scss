@@ -257,6 +257,10 @@ main {
             align-items: center;
             gap: 1rem;
 
+            #whatIsDirector {
+                text-align: center;
+            }
+
             .message {
                 width: 75dvw;
                 width: 75vw;
@@ -266,6 +270,7 @@ main {
                 gap: .5rem;
 
                 @media (max-width: 767px) {
+                    width: 100%;
                     align-items: center;
                     flex-direction: column;
                 }
@@ -292,7 +297,9 @@ main {
                     }
 
                     .message-content {
-
+                        @media (max-width: 767px) {
+                            text-align: center;
+                        }
                     }
                 }
             }
