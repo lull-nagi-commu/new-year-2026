@@ -1,0 +1,57 @@
+name: Auto merge staging to main
+
+on:
+  push:
+    branches:
+      - staging
+
+jobs:
+  create-merge-pr:
+    runs-on: ubuntu-latest
+    outputs:
+      pr_number: ${{ steps.create_pr.outputs.pr_number }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create PR from staging → main
+        id: create_pr
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            const existing = await github.rest.pulls.list({
+              owner,
+              repo,
+              head: `${owner}:staging`,
+              base: "main",
+              state: "open",
+            });
+
+            if (existing.data.length > 0) {
+              const pr = existing.data[0];
+              core.setOutput("pr_number", pr.number);
+              return;
+            }
+
+            const { data: pr } = await github.rest.pulls.create({
+              owner,
+              repo,
+              title: "gh-actions: Sync staging → main",
+              head: "staging",
+              base: "main",
+              body: "Automated Pull Request for GitHub Actions."
+            });
+
+            core.setOutput("pr_number", pr.number);
+
+  auto-merge:
+    needs: create-merge-pr
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auto merge PR
+        uses: pascalgn/automerge-action@v0.16.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MERGE_METHOD: squash
+          PULL_REQUEST: ${{ needs.create-merge-pr.outputs.pr_number }}

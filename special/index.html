@@ -1,157 +1,182 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>特別企画 - 凪コミュ！ 新年特設サイト</title>
-    <meta name="description" content="勉強会と交流を楽しむコミュニティ「凪コミュ！」の新年特設サイト。">
-    <meta name="robots" content="noindex, nofollow">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- SEO -->
+        <title>新年特別企画 - 凪コミュ！ 新年特設サイト</title>
+        <meta name="description" content="勉強会と交流を楽しむコミュニティ「凪コミュ！」の新年特設サイト。">
+        <meta name="robots" content="noindex, nofollow">
+        <!-- Styles -->
+        <link rel="stylesheet" href="./../src/styles/app.css">
+        <link rel="stylesheet" href="./../src/styles/special.css">
+        <!-- Icons -->
+        <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="./../src/images/icon.svg">
+        <link rel="icon" type="image/svg" sizes="36x36" href="./../src/images/icon.svg">
+        <!-- OGP -->
+        <meta property="og:title" content="新年特別企画">
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="https://lull-nagi-commu.github.io/new-year-2026/special/">
+        <meta property="og:image" content="https://lull-nagi-commu.github.io/new-year-2026/src/images/ogp.png">
+        <meta property="og:site_name" content="凪コミュ！ 新年特設サイト">
+        <meta property="og:description" content="勉強会と交流を楽しむコミュニティ「凪コミュ！」の新年特設サイト。">
+        <meta property="og:locale" content="ja">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="新年特別企画 - 凪コミュ！ 新年特設サイト">
+        <meta name="twitter:description" content="勉強会と交流を楽しむコミュニティ「凪コミュ！」の新年特設サイト。">
+        <meta name="twitter:image" content="https://lull-nagi-commu.github.io/new-year-2026/src/images/ogp.png">
+        <!-- GTag (Google Analytics) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YDFJMFTMLP"></script>
+        <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-YDFJMFTMLP');</script>
+    </head>
 
-    <link rel="stylesheet" href="../src/styles/app.css">
-    <link rel="stylesheet" href="../src/styles/special.css">
+    <body class="scroll-lock">
+        <h1>凪コミュ！ 新年特設サイト</h1>
 
-    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="./src/images/icon.svg">
-    <link rel="icon" type="image/svg" sizes="36x36" href="./src/images/icon.svg">
+        <div id="container">
+            <header>
+                <a href="./../" id="brandLogo">
+                    <img src="./../src/images/logo.png" alt="凪コミュ！">
+                </a>
 
-    <meta property="og:title" content="凪コミュ！ 新年特設サイト">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lull-nagi-commu.github.io/new-year-2026/">
-    <meta property="og:image" content="https://lull-nagi-commu.github.io/new-year-2026/src/images/ogp.png">
-    <meta property="og:site_name" content="凪コミュ！ 新年特設サイト">
-    <meta property="og:description" content="勉強会と交流を楽しむコミュニティ「凪コミュ！」の新年特設サイト。">
-    <meta property="og:locale" content="ja">
+                <button id="headerNavbarToggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="凪コミュ！ 新年特設サイト">
-    <meta name="twitter:description" content="勉強会と交流を楽しむコミュニティ「凪コミュ！」の新年特設サイト。">
-    <meta name="twitter:image" content="https://lull-nagi-commu.github.io/new-year-2026/src/images/ogp.png">
+                <nav id="headerNavbar">
+                    <img src="./../src/images/logo.png" alt="凪コミュ！" class="nav-logo">
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YDFJMFTMLP"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+                    <div class="nav-group">
+                        <a href="./../">トップ</a>
+                        <a href="./" class="active">新年特別企画</a>
+                    </div>
 
-        gtag('config', 'G-YDFJMFTMLP');
-    </script>
-</head>
-<body>
-    <div id="mainContainer">
-        <header>
-            <a href="../"><img src="../src/images/icon.svg" alt="凪コミュ！"></a>
+                    <div class="nav-group">
+                        <a href="https://sites.google.com/view/lull-nagi-commu/">公式サイト</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUTkAp2Sgr0iJ9th_bZ1jrlbhJs2OUwsbPhoZRTyyK3suQdA/viewform">主催者応募</a>
+                    </div>
 
-            <nav>
-                <a href="../">トップ</a>
-            </nav>
-        </header>
+                    <img src="./../src/images/members.png" alt="運営メンバー" id="headerNavbarMembers">
+                </nav>
+            </header>
 
-        <main>
-            <section id="about">
-                <div class="heading">
-                    <h2>「ふふふっ」で始まる、ちょっと特別な新年。</h2>
-                </div>
+            <main>
+                <h2 class="visually-hidden">新年特別企画</h2>
 
-                <div id="aboutContent">
-                    <!-- FIXME - 修正 -->
-                    <p>2026年1月0日(ddd)に行われる、凪コミュ！第4回は「新年初開催」「運営メンバー以外による主催初」を記念して、<br>新年特別企画「福笑い」を実施します。</p>
-                    <p>今回の企画では、事前参加型のコンテンツとして、参加予定者の皆さんにも事前に作品づくりに挑戦していただき、<br>当日その作品を紹介する予定です。</p>
-                    <p>新しい一年のスタートを、みんなで笑顔いっぱいに迎えられるよう、凪コミュ！らしい温かく楽しい時間をお届けします。</p>
-                </div>
-            </section>
+                <section id="about">
+                    <div class="heading">
+                        <h3>「ふふふっ」で始まる、ちょっと特別な新年に</h3>
+                    </div>
 
-            <section id="pattern">
-                <div class="heading">
-                    <h2>福笑いの種類</h2>
-                </div>
+                    <div id="aboutContent">
+                        <p>2026年1月16日(金)に行われる、凪コミュ！第4回では新年初開催を記念して、新年特別企画「福笑い」を実施します。</p>
 
-                <div id="patternContent">
-                    <p>今回の福笑いは、定番の「おかめ」「ひょっとこ」に加え、シークレット1種の計3種類ご用意しております。</p>
-                    <p>福笑いの素材はクリエイター部より、〇〇さんに制作していただきました！</p>
-                    <p>下記のCanvaテンプレートをコピーし、お楽しみください！</p>
-                </div>
+                        <p>今回の企画では、事前参加型のコンテンツとして、参加予定者の皆さんにも事前に作品づくりに挑戦していただき、当日その作品を紹介する予定です。</p>
 
-                <div id="links">
-                    <a href="" target="_blank">おかめ</a>
-                    <a href="" target="_blank">ひょっとこ</a>
-                    <a href="" target="_blank">シークレット</a>
-                </div>
+                        <p>新しい一年のスタートを、みんなで笑顔いっぱいに迎えられるよう、凪コミュ！らしい温かく楽しい時間をお届けします。</p>
+                    </div>
+                </section>
 
-                <span id="externalLinkMessage">※上記の各種リンクは外部サイトを開きます。</span>
-            </section>
+                <section id="pattern">
+                    <div class="heading">
+                        <h3>福笑いの種類</h3>
+                    </div>
 
-            <section id="howTo">
-                <div class="heading">
-                    <h2>楽しみ方</h2>
-                </div>
+                    <div id="patternContent">
+                        <p>今回の福笑いは、定番の「おかめ」「ひょっとこ」に加え、シークレット1種の計3種類ご用意しております。</p>
 
-                <div id="howToContent">
-                    <div class="step">
-                        <span class="step-no">1</span>
+                        <p>福笑いの素材はクリエイター部より、〇〇さんに制作していただきました！</p>
 
-                        <div class="step-body">
-                            <p>上記のCanvaテンプレートをコピーする。</p>
-                            <!-- FIXME - 画像追加 -->
+                        <p>下記のCanvaテンプレートをコピーし、お楽しみください！</p>
+
+                        <div class="btn-group">
+                            <a href="" target="_blank" class="btn">おかめ</a>
+                            <a href="" target="_blank" class="btn">ひょっとこ</a>
+                            <a href="" target="_blank" class="btn">シークレット</a>
+                        </div>
+
+                        <small class="text-muted">※上記の各種リンクは外部サイトを開きます。</small>
+                    </div>
+                </section>
+
+                <section id="howTo">
+                    <div class="heading">
+                        <h3>楽しみ方</h3>
+                    </div>
+
+                    <div id="howToContent">
+                        <div class="step">
+                            <span class="step-no">1</span>
+
+                            <div class="step-body">
+                                <p>上記のCanvaテンプレートをコピーする。</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <span class="step-no">2</span>
+
+                            <div class="step-body">
+                                <p>福笑いを楽しみ、結果をPNG形式にて出力しよう。</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <span class="step-no">3</span>
+
+                            <div class="step-body">
+                                <!-- FIXME - URL修正 -->
+                                <p><a href="">受付フォーム</a>へ送る。</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <span class="step-no">4</span>
+
+                            <div class="step-body">
+                                <p>2026年1月16日(金) 21:00より行われる、凪コミュ！ 第4回にて公開！</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="step">
-                        <span class="step-no">2</span>
+                </section>
 
-                        <div class="step-body">
-                            <p>福笑いを楽しむ。</p>
-                            <p>結果をPNG形式にて出力しよう。</p>
-                        </div>
+                <section id="acceptForm">
+                    <div class="heading">
+                        <h3>受付フォーム</h3>
                     </div>
-                    <div class="step">
-                        <span class="step-no">3</span>
 
-                        <div class="step-body">
-                            <p><a href="" target="_blank">受付フォーム</a>へ送る。</p>
+                    <div id="acceptFormContent">
+                        <p>下記フォームより、みなさまの福笑いを受け付けております！</p>
+
+                        <div class="btn-group">
+                            <!-- FIXME - 修正 -->
+                            <a href="" class="btn">受付フォーム</a>
                         </div>
+
+                        <small class="text-muted">※上記の各種リンクは外部サイトを開きます。</small>
                     </div>
-                    <div class="step">
-                        <span class="step-no">4</span>
+                </section>
+            </main>
 
-                        <div class="step-body">
-                            <p>2026年1月0日(ddd)に行われる凪コミュ！にて公開！</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <footer>
+                <span id="catchphrase">「Discover. Explore. Grow.」</span>
+                <small>&copy; 2026 <a href="https://sites.google.com/view/lull-nagi-commu/">凪コミュ！</a> 運営.</small>
+            </footer>
+        </div>
 
-            <section id="accept">
-                <div class="heading">
-                    <h2>受付フォーム</h2>
-                </div>
-
-                <div id="acceptContent">
-                    <p>下記フォームより、みなさまの福笑いを受け付けております！</p>
-                </div>
-
-                <div id="links">
-                    <a href="" target="_blank">受付フォーム</a>
-                </div>
-
-                <span id="externalLinkMessage">※上記の各種リンクは外部サイトを開きます。</span>
-            </section>
-        </main>
-
-        <footer>
-            <span id="catchphrase">「Discover. Explore. Grow.」</span>
-            <small>&copy; 2026 <a href="https://sites.google.com/view/lull-nagi-commu/">凪コミュ！</a> 運営.</small>
-        </footer>
-    </div>
-
-    <div id="javascript">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-        <script>
-            $(document).ready(function () {
-
-            });
-        </script>
-    </div>
-</body>
+        <div id="javascript">
+            <script src="./../libs/jquery.min.js"></script>
+            <script src="./../libs/gsap/gsap.min.js"></script>
+            <script src="./../libs/gsap/ScrollTrigger.min.js"></script>
+            <script src="./../src/js/loadingManager.js"></script>
+            <script src="./../src/js/navbarToggler.js"></script>
+            <script>
+                // scroll triggers
+            </script>
+        </div>
+    </body>
 </html>
