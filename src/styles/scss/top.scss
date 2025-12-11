@@ -297,6 +297,8 @@ main {
                     }
 
                     .message-content {
+                        width: 100%;
+
                         @media (max-width: 767px) {
                             text-align: center;
                         }
