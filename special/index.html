@@ -74,9 +74,13 @@
                     <div id="aboutContent">
                         <p>2026年1月16日(金)に行われる、凪コミュ！第4回では新年初開催を記念して、新年特別企画「福笑い」を実施します。</p>
 
-                        <p>今回の企画では、事前参加型のコンテンツとして、参加予定者の皆さんにも事前に作品づくりに挑戦していただき、当日その作品を紹介する予定です。</p>
+                        <p>今回の企画では、事前参加型のコンテンツとして、<br>参加予定者の皆さんにも事前に作品づくりに挑戦していただき、当日その作品を紹介する予定です。</p>
 
                         <p>新しい一年のスタートを、みんなで笑顔いっぱいに迎えられるよう、凪コミュ！らしい温かく楽しい時間をお届けします。</p>
+
+                        <img src="./../src/images/special/okame.svg" alt="おかめ" id="aboutImageOkame" class="about-image" style="transform: scale(0);">
+
+                        <img src="./../src/images/special/hyottoko.svg" alt="ひょっとこ" id="aboutImageHyottoko" class="about-image" style="transform: scale(0);">
                     </div>
                 </section>
 
@@ -172,7 +176,52 @@
             <script src="./../src/js/loadingManager.js"></script>
             <script src="./../src/js/navbarToggler.js"></script>
             <script>
-                // scroll triggers
+                $(document).ready(function () {
+                    let timeline = gsap.timeline();
+
+                    timeline
+                        .fromTo(
+                            "#aboutImageOkame",
+                            {
+                                scale: 0,
+                                rotate: -25,
+                            },
+                            {
+                                scale: 1.1,
+                                rotate: -25,
+                                duration: 0.6,
+                                ease: "back.out(1.7)"
+                            }
+                        )
+                        .to("#aboutImageOkame", {
+                            scale: 1,
+                            rotate: -25,
+                            duration: 0.3,
+                            ease: "back.out(1.7)"
+                        });
+
+                    timeline
+                        .fromTo(
+                            "#aboutImageHyottoko",
+                            {
+                                scale: 0,
+                                rotate: 25,
+                            },
+                            {
+                                scale: 1.1,
+                                rotate: 25,
+                                duration: 0.6,
+                                ease: "back.out(1.7)"
+                            },
+                            1
+                        )
+                        .to("#aboutImageHyottoko", {
+                            scale: 1,
+                            rotate: 25,
+                            duration: 0.3,
+                            ease: "back.out(1.7)"
+                        });
+                });
             </script>
         </div>
     </body>
