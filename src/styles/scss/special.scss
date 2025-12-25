@@ -71,6 +71,9 @@ main {
     #howTo {
         #howToContent {
             overflow-x: scroll;
+            scrollbar-gutter: stable both-edges;
+            scrollbar-color: variables.$color-accent rgba(variables.$color-white, 25%);
+            padding-bottom: 1.5rem;
             display: flex;
             justify-content: start;
             align-items: stretch;
@@ -79,7 +82,7 @@ main {
             .step {
                 background-color: variables.$color-white;
                 border-radius: .25rem;
-                width: calc((100% - 1.5rem) / 4);
+                width: 50%;
                 color: variables.$color-primary;
                 flex: 0 0 auto;
                 padding: .5rem;
