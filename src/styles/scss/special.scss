@@ -106,6 +106,17 @@ main {
                 .step-body {
                     padding: .25rem;
                     text-align: start;
+
+                    p {
+                        font-size: 120%;
+                    }
+
+                    img {
+                        display: block;
+                        margin: auto 0;
+                        width: 100%;
+                        border-radius: .25rem;
+                    }
                 }
             }
         }
