@@ -104,6 +104,11 @@ main {
                 }
 
                 .step-body {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: stretch;
+                    height: calc(100% - 2rem);
                     padding: .25rem;
                     text-align: start;
 
@@ -113,7 +118,6 @@ main {
 
                     img {
                         display: block;
-                        margin: auto 0;
                         width: 100%;
                         border-radius: .25rem;
                     }
